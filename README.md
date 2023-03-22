@@ -11,11 +11,11 @@ Package Contents:
 
 1. PyBank
 
-    a. [main.py]()
+    a. [main.py](https://github.com/shriparna/python-challenge/blob/main/PyBank/main.py)
 
-    b. [budget_data.csv]()  (Input File)
+    b. [budget_data.csv](https://github.com/shriparna/python-challenge/blob/main/PyBank/Resources/budget_data.csv)  (Input File)
 
-    c. [financial_analysis.csv]()   (Output File)
+    c. [financial_analysis.csv](https://github.com/shriparna/python-challenge/blob/main/PyBank/analysis/financial_analysis.csv)   (Output File)
     
 2. PyPoll
 
