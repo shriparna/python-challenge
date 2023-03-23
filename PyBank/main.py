@@ -1,21 +1,20 @@
 # main.py
 # This program will cover the challenge for PyBank
-# Logic: 
-# Read CSV file from Resources (Resources/budget_data.csv) 
-# Create variables totalmonths, total, difference
-# Create variables for records, prev_profitloss, current_profitloss, greatest_increase, greatest_decrease and intitialize them with 0
-# Create an empty list for output so that it can be printed on the console and written to the output file at the same time
-# Traverse through the file and skip the header row
-# For the first row note down the profit_loss as previous profit_loss
-# Increment the counter of the records in totalmonths and increment sum of profilt_loss in total
-# Calculate difference by subtracting previous profit_loss from current profil_loss and this difference to cumulative difference
-# Check if current_diff is greater than the previous one then store new as the greatest and record the period
-# Check if current_diff is lower than the previous one then store new as the lowest and record the period
-# Assign current profit_loss to previous profit_loss
-# After the end of input file 
-# Append the analysis details to the output text
-# Open the output file as CSV in anaysis/financial_analysis.csv
-# From the output list print the output values on the console and print the details in the output file
+# 1. Read CSV file from Resources (Resources/budget_data.csv) 
+# 2. Create variables totalmonths, total, difference and intitialize them with 0
+# 3. Create variables for records, prev_profitloss, current_profitloss, greatest_increase, greatest_decrease and intitialize them with 0
+# 4. Create an empty list for output so that it can be printed on the console and written to the output file at the same time
+# 5. Traverse through the file and skip the header row
+# 6. For the first row note down the profit_loss as previous profit_loss
+# 7. Increment the counter of the records in totalmonths and increment sum of profilt_loss in total
+# 8. Calculate difference by subtracting previous profit_loss from current profil_loss and this difference to cumulative difference
+# 9. Check if current_diff is greater than the previous one then store new as the greatest and record the period
+#10. Check if current_diff is lower than the previous one then store new as the lowest and record the period
+#11. Assign current profit_loss to previous profit_loss
+#12. After the end of input file 
+#13. Append the analysis details to the output text
+#14. Open the output file as CSV in anaysis/financial_analysis.csv
+#15. From the output list print the output values on the console and print the details in the output file
 
 import csv
 

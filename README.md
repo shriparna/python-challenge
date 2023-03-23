@@ -36,8 +36,8 @@ Package Contents:
 ## 1. PyBank
 
 Logic: 
--  Read CSV file from Resources (Resources/budget_data.csv) 
-- Create variables totalmonths, total, difference
+- Read CSV file from Resources (Resources/budget_data.csv) 
+- Create variables totalmonths, total, difference and intitialize them with 0
 - Create variables for records, prev_profitloss, current_profitloss, greatest_increase, greatest_decrease and intitialize them with 0
 - Create an empty list for output so that it can be printed on the console and written to the output file at the same time
 - Traverse through the file and skip the header row
@@ -56,12 +56,12 @@ Logic:
 ## 2. PyPoll
 
 Logic: 
--  Read CSV file from Resources (Resources/election_data.csv).
-- Create variable totalvotes and space as candidate
+- Read CSV file from Resources (Resources/election_data.csv).
+- Create variable totalvotes and initialized to 0 and candidate and initialize with empty string
 - Create an empty dictionary as we don't know how many candidates and also they may not be in the sorted order
 - Create an empty list for output so that it can be printed on the console and written to the output file at the same time
 - Traverse through the file and skip the header row
-- Increement the counter of the votes in totalvotes
+- Increment the counter of the votes in totalvotes
 - Check if current candidate from file is not equal to candidate variable then make candidate variable from the candidate file and if the candidate not in dictionary then add the candidate and reset its value to zero
 - while the candidate is same as candidate from file increment that candidate's count
 - After the end of file 
