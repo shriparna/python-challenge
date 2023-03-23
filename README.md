@@ -5,7 +5,7 @@
 
 ### Details of the program or pseudo logic
 #### Shridhar Kamat
-#### Date: 3/16/2023
+#### Date: 3/23/2023
 <hr>
 Package Contents:
 
@@ -21,9 +21,10 @@ Package Contents:
 
     a. [main.py](https://github.com/shriparna/python-challenge/blob/main/PyPoll/main.py)
 
-    b, [election_data.csv](https://github.com/shriparna/python-challenge/blob/main/PyPoll/Resources/election_data.csv)    (Input File)
+    b. [election_data.csv](https://github.com/shriparna/python-challenge/blob/main/PyPoll/Resources/election_data.csv)    (Input File)    
+    [Note: File is too large so Github may not show it]
 
-    c. [election_results.csv]()  (Output File)
+    c. [election_results.csv](https://github.com/shriparna/python-challenge/blob/main/PyPoll/analysis/election_results.csv)  (Output File)
 
 3. [README.md](https://github.com/shriparna/python-challenge/blob/main/README.md) 
 

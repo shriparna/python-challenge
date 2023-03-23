@@ -16,6 +16,7 @@
 # Append the analysis details to the output text
 # Open the output file as CSV in anaysis/financial_analysis.csv
 # From the output list print the output values on the console and print the details in the output file
+
 import csv
 
 csvfilepath = "Resources/budget_data.csv"
