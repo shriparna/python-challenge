@@ -26,6 +26,8 @@ outputtext = []
 
 candidate = ""
 candictionary = {}
+
+# Open the input file
 with open(csvfilepath, 'r') as pypollfile:
     csvreader = csv.reader (pypollfile, delimiter=',')
 
@@ -35,13 +37,14 @@ with open(csvfilepath, 'r') as pypollfile:
     outputtext.append("Election Results")
     outputtext.append("-------------------------")
 
+    # Traverse through the file
     for row in csvreader:
         totalvotes = totalvotes + 1
 
         # Check if Candidate is changed
         if row[2] != candidate:
             candidate = row[2]
-            if candidate not in candictionary: # new candidate
+            if candidate not in candictionary: # new candidate 
                 candictionary[candidate]=0 # initialize value for new candidate
         candictionary[candidate] += 1
 

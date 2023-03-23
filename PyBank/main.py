@@ -31,15 +31,17 @@ greatest_increase = 0
 greatest_decrease = 0
 outputtext = []
 
+# Open the input file
 with open (csvfilepath, 'r') as pybankfile:
     csvreader = csv.reader (pybankfile, delimiter=',')
 
     csvheader = next(csvreader) # skip the header row
 
-    # append the header row to the outputtext
+    # Append the header row to the outputtext
     outputtext.append("Financial Analysis")
     outputtext.append("------------------------------")
 
+    # Traverse through the file
     for row in csvreader:
         totalmonths = totalmonths + 1 
         if totalmonths == 1:
@@ -57,19 +59,20 @@ with open (csvfilepath, 'r') as pybankfile:
         prev_pl = curr_pl
       
 avg_change = round(cum_diff / (totalmonths - 1), 2) # since it start from row 2, we subtract the count by 1  
-# append the calculations to the ouptuttext   
+
+# Append the calculations to the ouptuttext   
 outputtext.append(f"Total Months: {totalmonths}")
 outputtext.append(f"Total : {total}")
 outputtext.append(f"Average Change: {avg_change}")
 outputtext.append(f"Greatest Increase in Profits: {gi_period} (${greatest_increase})")
 outputtext.append(f"Greatest Decrease in Profits: {gd_period} (${greatest_decrease})")
 
-# print values to a CSV file and the console
+# Print values to a CSV file and the console
 with open (outputfilepath, 'w') as csvoutputfile:
-    #Initialize the csv.writer
+    # Initialize the csv.writer
     csvoutput = csv.writer(csvoutputfile)
 
-    #There is no specific header as the output is more like a text format
+    # There is no specific header as the output is more like a text format
     for line in outputtext:
         print(line)
         csvoutput.writerow([line])
